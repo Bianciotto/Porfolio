@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Bianciotto - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">Felipe Bianciotto</a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#start" class="nav-link active">Inicio</a>
+                    <a href="#projets" class="nav-link">Proyectos</a>
+                    <a href="#about" class="nav-link">Sobre mí</a>
+                    <a href="#course" class="nav-link">Cursos</a>
+                    <a href="#contact" class="nav-link">Contacto</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="start" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Hola, soy <span class="highlight">Felipe Bianciotto</span>
+                        </h1>
+                        <p class="hero-subtitle">Estudiante de Tecnicatura Universitaria en Programación</p>
+                        <p class="hero-description">
+                            "Apasionada por la programación segura y el desarrollo con propósito"
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projets" class="btn btn-primary">
+                                <i class="fas fa-code"></i>
+                                Ver Proyectos
+                            </a>
+                            <a href="contacto.html" class="btn btn-secondary">
+                                <i class="fas fa-envelope"></i>
+                                Contactar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="felipe.jpeg" alt="Felipe Bianciotto" class="profile-img">
+                            <div class="floating-icons">
+                                <div class="floating-icon" style="--delay: 0s">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="floating-icon" style="--delay: 1s">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="floating-icon" style="--delay: 2s">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="floating-icon" style="--delay: 3s">
+                                    <i class="fab fa-linux"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Ciberseguridad</h3>
+                        <p>Especialización en seguridad informática y protección de sistemas</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Desarrollo</h3>
+                        <p>Programación con enfoque en buenas prácticas y código limpio</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Aprendizaje</h3>
+                        <p>Constante actualización en tecnologías emergentes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <main class="main-content">
+                <section class="projects-hero">
+                    <div class="container">
+                        <h1 class="page-title">Mis Proyectos</h1>
+                        <p class="page-subtitle">Explora mi trabajo en desarrollo y ciberseguridad</p>
+                    </div>
+                </section>
+
+                <section class="projects-content">
+                    <div class="container">
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="" alt="Sistema de Gestión Segura">
+                                    <div class="project-overlay">
+                                        <div class="project-links">
+                                            <a href="#" class="project-link" title="Ver en GitHub">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="#" class="project-link" title="Ver Demo">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3>Sistema de Gestión Segura</h3>
+                                    <p>Aplicación web para gestión de usuarios con autenticación robusta, cifrado de
+                                        datos y auditoría de seguridad.</p>
+                                    <div class="project-technologies">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Flask</span>
+                                        <span class="tech-tag">SQLite</span>
+                                        <span class="tech-tag">JWT</span>
+                                    </div>
+                                    <div class="project-features">
+                                        <ul>
+                                            <li>Autenticación multifactor</li>
+                                            <li>Cifrado AES-256</li>
+                                            <li>Logs de auditoría</li>
+                                            <li>Validación de entrada</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="/placeholder.svg?height=250&width=400"
+                                        alt="Analizador de Vulnerabilidades">
+                                    <div class="project-overlay">
+                                        <div class="project-links">
+                                            <a href="#" class="project-link" title="Ver en GitHub">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="#" class="project-link" title="Ver Demo">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3>Analizador de Vulnerabilidades Web</h3>
+                                    <p>Herramienta automatizada para detectar vulnerabilidades comunes en aplicaciones
+                                        web como XSS, SQL injection y CSRF.</p>
+                                    <div class="project-technologies">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Requests</span>
+                                        <span class="tech-tag">BeautifulSoup</span>
+                                        <span class="tech-tag">Selenium</span>
+                                    </div>
+                                    <div class="project-features">
+                                        <ul>
+                                            <li>Detección de XSS</li>
+                                            <li>Análisis SQL injection</li>
+                                            <li>Reportes detallados</li>
+                                            <li>Interfaz gráfica</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="/placeholder.svg?height=250&width=400" alt="Monitor de Red">
+                                    <div class="project-overlay">
+                                        <div class="project-links">
+                                            <a href="#" class="project-link" title="Ver en GitHub">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="#" class="project-link" title="Ver Demo">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3>Monitor de Tráfico de Red</h3>
+                                    <p>Sistema de monitoreo en tiempo real que analiza el tráfico de red y detecta
+                                        patrones sospechosos o anomalías.</p>
+                                    <div class="project-technologies">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Scapy</span>
+                                        <span class="tech-tag">Matplotlib</span>
+                                        <span class="tech-tag">Tkinter</span>
+                                    </div>
+                                    <div class="project-features">
+                                        <ul>
+                                            <li>Captura de paquetes</li>
+                                            <li>Análisis de protocolos</li>
+                                            <li>Alertas automáticas</li>
+                                            <li>Visualización de datos</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="/placeholder.svg?height=250&width=400" alt="Generador de Contraseñas">
+                                    <div class="project-overlay">
+                                        <div class="project-links">
+                                            <a href="#" class="project-link" title="Ver en GitHub">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="#" class="project-link" title="Ver Demo">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3>Generador de Contraseñas Seguras</h3>
+                                    <p>Aplicación web que genera contraseñas criptográficamente seguras con opciones
+                                        personalizables y verificación de fortaleza.</p>
+                                    <div class="project-technologies">
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">HTML5</span>
+                                        <span class="tech-tag">CSS3</span>
+                                        <span class="tech-tag">Web Crypto API</span>
+                                    </div>
+                                    <div class="project-features">
+                                        <ul>
+                                            <li>Generación criptográfica</li>
+                                            <li>Análisis de fortaleza</li>
+                                            <li>Opciones personalizables</li>
+                                            <li>Interfaz responsive</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="/placeholder.svg?height=250&width=400" alt="Dashboard de Seguridad">
+                                    <div class="project-overlay">
+                                        <div class="project-links">
+                                            <a href="#" class="project-link" title="Ver en GitHub">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="#" class="project-link" title="Ver Demo">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3>Dashboard de Seguridad</h3>
+                                    <p>Panel de control centralizado para monitorear eventos de seguridad, logs del
+                                        sistema y métricas de rendimiento.</p>
+                                    <div class="project-technologies">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">Express</span>
+                                        <span class="tech-tag">Chart.js</span>
+                                    </div>
+                                    <div class="project-features">
+                                        <ul>
+                                            <li>Monitoreo en tiempo real</li>
+                                            <li>Visualización de datos</li>
+                                            <li>Sistema de alertas</li>
+                                            <li>Exportación de reportes</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="/placeholder.svg?height=250&width=400" alt="Cifrador de Archivos">
+                                    <div class="project-overlay">
+                                        <div class="project-links">
+                                            <a href="#" class="project-link" title="Ver en GitHub">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="#" class="project-link" title="Ver Demo">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3>Cifrador de Archivos</h3>
+                                    <p>Herramienta de línea de comandos para cifrar y descifrar archivos usando
+                                        algoritmos de cifrado simétrico y asimétrico.</p>
+                                    <div class="project-technologies">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Cryptography</span>
+                                        <span class="tech-tag">Click</span>
+                                        <span class="tech-tag">RSA</span>
+                                    </div>
+                                    <div class="project-features">
+                                        <ul>
+                                            <li>Cifrado AES y RSA</li>
+                                            <li>Interfaz CLI intuitiva</li>
+                                            <li>Gestión de claves</li>
+                                            <li>Verificación de integridad</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="github-stats">
+                    <div class="container">
+                        <h2 class="section-title">Actividad en GitHub</h2>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <i class="fab fa-github"></i>
+                                <h3>25+</h3>
+                                <p>Repositorios</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-code-branch"></i>
+                                <h3>150+</h3>
+                                <p>Commits</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-star"></i>
+                                <h3>45+</h3>
+                                <p>Stars</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-users"></i>
+                                <h3>8+</h3>
+                                <p>Colaboraciones</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+        </section>
+
+        <section id="about">
+            <main class="main-content">
+                <section class="about-hero">
+                    <div class="container">
+                        <h1 class="page-title">Sobre mí</h1>
+                        <p class="page-subtitle">Conoce más sobre mi trayectoria y pasión por la tecnología</p>
+                    </div>
+                </section>
+
+                <section class="about-content">
+                    <div class="container">
+                        <div class="about-grid">
+                            <div class="about-image">
+                                <img src="" alt="Felipe Bianciotto" class="about-img">
+                            </div>
+                            <div class="about-text">
+                                <h2>¡Hola! Soy Felipe Bianciotto</h2>
+                                <p>
+                                    Soy estudiante de la Tecnicatura Universitaria en Programación con una pasión
+                                    especial por la ciberseguridad. Mi objetivo es combinar el desarrollo de software
+                                    con las mejores prácticas de seguridad para crear soluciones robustas y confiables.
+                                </p>
+                                <p>
+                                    Desde que comencé mis estudios, me he enfocado en entender no solo cómo crear código
+                                    funcional, sino también cómo protegerlo de vulnerabilidades y amenazas. Creo
+                                    firmemente que la seguridad debe ser una consideración fundamental desde el inicio
+                                    de cualquier proyecto.
+                                </p>
+                                <p>
+                                    Mi enfoque se centra en el aprendizaje continuo, la atención al detalle y la
+                                    implementación de soluciones que no solo funcionen, sino que también sean seguras y
+                                    escalables.
+                                </p>
+
+                                <div class="stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">15+</span>
+                                        <span class="stat-label">Cursos Completados</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">8+</span>
+                                        <span class="stat-label">Proyectos Realizados</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">2+</span>
+                                        <span class="stat-label">Años Estudiando</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="skills">
+                    <div class="container">
+                        <h2 class="section-title">Tecnologías y Herramientas</h2>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3>Lenguajes de Programación</h3>
+                                <div class="skill-items">
+                                    <div class="skill-item">
+                                        <i class="fab fa-python"></i>
+                                        <span>Python</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-js-square"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-html5"></i>
+                                        <span>HTML5</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-css3-alt"></i>
+                                        <span>CSS3</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h3>Ciberseguridad</h3>
+                                <div class="skill-items">
+                                    <div class="skill-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Wireshark</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-network-wired"></i>
+                                        <span>Nmap</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-bug"></i>
+                                        <span>Pentesting</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-lock"></i>
+                                        <span>Criptografía</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h3>Sistemas y Herramientas</h3>
+                                <div class="skill-items">
+                                    <div class="skill-item">
+                                        <i class="fab fa-linux"></i>
+                                        <span>Linux</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-git-alt"></i>
+                                        <span>Git</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-database"></i>
+                                        <span>SQL</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-docker"></i>
+                                        <span>Docker</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </section>
+
+        <section id="course">
+            <main class="main-content">
+                <section class="courses-hero">
+                    <div class="container">
+                        <h1 class="page-title">Cursos y Capacitaciones</h1>
+                        <p class="page-subtitle">Mi formación académica y profesional en tecnología</p>
+                    </div>
+                </section>
+
+                <section class="courses-content">
+                    <div class="container">
+                        <div class="courses-grid">
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div class="course-icon">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="course-year">2024</div>
+                                </div>
+                                <h3>Tecnicatura Universitaria en Programación</h3>
+                                <p class="course-institution">Universidad Tecnológica Nacional</p>
+                                <p class="course-description">
+                                    Formación integral en desarrollo de software, algoritmos, estructuras de datos y
+                                    metodologías de programación.
+                                </p>
+                                <div class="course-technologies">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">SQL</span>
+                                    <span class="tech-tag">Git</span>
+                                </div>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div class="course-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="course-year">2024</div>
+                                </div>
+                                <h3>Fundamentos de Ciberseguridad</h3>
+                                <p class="course-institution">Cisco Networking Academy</p>
+                                <p class="course-description">
+                                    Conceptos fundamentales de seguridad informática, amenazas, vulnerabilidades y
+                                    medidas de protección.
+                                </p>
+                                <div class="course-technologies">
+                                    <span class="tech-tag">Network Security</span>
+                                    <span class="tech-tag">Ethical Hacking</span>
+                                    <span class="tech-tag">Risk Assessment</span>
+                                </div>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div class="course-icon">
+                                        <i class="fab fa-python"></i>
+                                    </div>
+                                    <div class="course-year">2023</div>
+                                </div>
+                                <h3>Python para Ciberseguridad</h3>
+                                <p class="course-institution">Coursera - Universidad de Michigan</p>
+                                <p class="course-description">
+                                    Desarrollo de herramientas de seguridad usando Python, automatización de tareas de
+                                    pentesting y análisis forense.
+                                </p>
+                                <div class="course-technologies">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Scapy</span>
+                                    <span class="tech-tag">Nmap</span>
+                                    <span class="tech-tag">Automation</span>
+                                </div>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div class="course-icon">
+                                        <i class="fas fa-network-wired"></i>
+                                    </div>
+                                    <div class="course-year">2023</div>
+                                </div>
+                                <h3>Análisis de Tráfico de Red con Wireshark</h3>
+                                <p class="course-institution">Udemy</p>
+                                <p class="course-description">
+                                    Técnicas avanzadas de análisis de protocolos de red, detección de intrusiones y
+                                    forense digital.
+                                </p>
+                                <div class="course-technologies">
+                                    <span class="tech-tag">Wireshark</span>
+                                    <span class="tech-tag">TCP/IP</span>
+                                    <span class="tech-tag">Network Analysis</span>
+                                </div>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div class="course-icon">
+                                        <i class="fab fa-js-square"></i>
+                                    </div>
+                                    <div class="course-year">2023</div>
+                                </div>
+                                <h3>Desarrollo Web Full Stack</h3>
+                                <p class="course-institution">FreeCodeCamp</p>
+                                <p class="course-description">
+                                    Desarrollo completo de aplicaciones web con enfoque en seguridad y mejores
+                                    prácticas.
+                                </p>
+                                <div class="course-technologies">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                </div>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div class="course-icon">
+                                        <i class="fab fa-linux"></i>
+                                    </div>
+                                    <div class="course-year">2022</div>
+                                </div>
+                                <h3>Administración de Sistemas Linux</h3>
+                                <p class="course-institution">Linux Professional Institute</p>
+                                <p class="course-description">
+                                    Administración avanzada de sistemas Linux, hardening de seguridad y gestión de
+                                    servidores.
+                                </p>
+                                <div class="course-technologies">
+                                    <span class="tech-tag">Linux</span>
+                                    <span class="tech-tag">Bash</span>
+                                    <span class="tech-tag">System Security</span>
+                                    <span class="tech-tag">Server Management</span>
+                                </div>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div class="course-icon">
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <div class="course-year">2022</div>
+                                </div>
+                                <h3>Criptografía y Seguridad de Datos</h3>
+                                <p class="course-institution">edX - MIT</p>
+                                <p class="course-description">
+                                    Fundamentos matemáticos de la criptografía, algoritmos de cifrado y protección de
+                                    información.
+                                </p>
+                                <div class="course-technologies">
+                                    <span class="tech-tag">Cryptography</span>
+                                    <span class="tech-tag">RSA</span>
+                                    <span class="tech-tag">AES</span>
+                                    <span class="tech-tag">Digital Signatures</span>
+                                </div>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div class="course-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="course-year">2022</div>
+                                </div>
+                                <h3>Seguridad en Bases de Datos</h3>
+                                <p class="course-institution">Platzi</p>
+                                <p class="course-description">
+                                    Técnicas de protección de bases de datos, prevención de inyecciones SQL y auditoría
+                                    de seguridad.
+                                </p>
+                                <div class="course-technologies">
+                                    <span class="tech-tag">SQL Security</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Database Auditing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="certifications">
+                    <div class="container">
+                        <h2 class="section-title">Certificaciones</h2>
+                        <div class="cert-grid">
+                            <div class="cert-item">
+                                <i class="fas fa-certificate"></i>
+                                <h4>CompTIA Security+ (En progreso)</h4>
+                                <p>Certificación internacional en fundamentos de ciberseguridad</p>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fas fa-award"></i>
+                                <h4>Cisco CyberOps Associate</h4>
+                                <p>Operaciones de ciberseguridad y análisis de amenazas</p>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fab fa-python"></i>
+                                <h4>Python Institute PCAP</h4>
+                                <p>Programación certificada en Python</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </section>
+
+        <section id="contact" class="contact">
+                <section class="contact-hero">
+                    <div class="container">
+                        <h1 class="page-title">Contacto</h1>
+                        <p class="page-subtitle">
+                            Estoy siempre abierta a nuevas oportunidades, colaboraciones y conversaciones sobre
+                            tecnología y ciberseguridad.
+                            No dudes en contactarme si tienes alguna pregunta o propuesta.
+                        </p>
+                    </div>
+                </section>
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <h2>Conectemos</h2>
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Email</h4>
+                                        <p>profesionalbianciotto@hotmail.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Teléfono</h4>
+                                        <p>+54 9 11 3124-9402</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Ubicación</h4>
+                                        <p>Buenos Aires, Argentina</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="social-links">
+                                <h3>Sígueme en</h3>
+                                <div class="social-icons">
+                                    <a href="#" class="social-link linkedin" title="LinkedIn">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="social-link github" title="GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="social-link twitter" title="Twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="social-link instagram" title="Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cv-download">
+                                <a href="#" class="btn btn-primary" id="download-cv">
+                                    <i class="fas fa-download"></i>
+                                    Descargar CV
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-form-container">
+                            <form class="contact-form" id="contact-form">
+                                <h2>Envíame un mensaje</h2>
+
+                                <div class="form-group">
+                                    <label for="name">Nombre completo</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject">Asunto</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Selecciona un asunto</option>
+                                        <option value="trabajo">Oportunidad laboral</option>
+                                        <option value="colaboracion">Colaboración</option>
+                                        <option value="consulta">Consulta técnica</option>
+                                        <option value="proyecto">Propuesta de proyecto</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Mensaje</label>
+                                    <textarea id="message" name="message" rows="6" required
+                                        placeholder="Cuéntame sobre tu proyecto o consulta..."></textarea>
+                                </div>
+
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="privacy" name="privacy" required>
+                                        <span class="checkmark"></span>
+                                        Acepto la política de privacidad y el tratamiento de mis datos
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Enviar mensaje
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            <section class="availability">
+                <div class="container">
+                    <div class="availability-card">
+                        <div class="availability-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="availability-content">
+                            <h3>Disponibilidad</h3>
+                            <p>Actualmente disponible para proyectos freelance y oportunidades de trabajo remoto o
+                                presencial en Buenos Aires.</p>
+                            <div class="availability-status">
+                                <span class="status-indicator available"></span>
+                                <span>Disponible para nuevos proyectos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Felipe Bianciotto. Todos los derechos reservados.</p>
+                <p>Desarrollado con <i class="fas fa-heart"></i> y dedicación</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
