@@ -332,6 +332,3 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('dark-theme');
     }
 });
-
-console.log('🌸 Portfolio de Ana Videla cargado correctamente');
-console.log('💻 Desarrollado con amor y dedicación');
