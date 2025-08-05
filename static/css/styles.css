@@ -1222,6 +1222,11 @@ body {
     }
 }
 
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Loading states */
 .loading {
     opacity: 0.7;
