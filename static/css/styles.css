@@ -10,7 +10,7 @@
     --primary-color: #7372a7;
     --primary-light: #ac719a;
     --primary-dark: #191331;
-    --secondary-color: #7a64c9;
+    --secondary-color: #7a64c991;
     --accent-color: #cecec3;
     --text-primary: #000000;
     --text-secondary: #1d1d1f;
@@ -703,7 +703,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(238, 3, 3, 0.9);
+    background: var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -930,12 +930,12 @@ body {
     background: #333;
 }
 
-.social-link.twitter {
-    background: #1da1f2;
+.social-link.Outlook {
+    background: #1518b4;
 }
 
-.social-link.instagram {
-    background: #e4405f;
+.social-link.Whatsapp {
+    background: #258f2e;
 }
 
 /* Contact Form */

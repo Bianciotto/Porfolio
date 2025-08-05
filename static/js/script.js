@@ -134,24 +134,6 @@ function showErrorMessage(message) {
     }, 5000);
 }
 
-// Descarga de CV
-const downloadCvButton = document.getElementById('download-cv');
-if (downloadCvButton) {
-    downloadCvButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        
-        // Aquí puedes agregar la lógica para descargar el CV real
-        // Por ahora, mostraremos un mensaje
-        const originalText = downloadCvButton.innerHTML;
-        downloadCvButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparando descarga...';
-        
-        setTimeout(() => {
-            downloadCvButton.innerHTML = originalText;
-            alert('CV descargado correctamente. (En una implementación real, aquí se descargaría el archivo PDF)');
-        }, 1500);
-    });
-}
-
 // Smooth scroll para enlaces internos
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

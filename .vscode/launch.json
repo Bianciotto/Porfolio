@@ -9,7 +9,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "C:\\Users\\HPUsuario\\OneDrive\\Documentos\\Programas Felipe\\Porfolio\\index.html"
+            "file": "${workspaceFolder}/static/template/index.html"
         }
     ]
 }
