@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio profesional de Felipe Bianciotto: desarrollador, QA y estudiante de sistemas. Descubre sus proyectos, habilidades, cursos y formas de contacto.">
     <title>Felipe Bianciotto - Portfolio</title>
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="static/img/cv.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -20,7 +22,7 @@
                 </div>
                 <div class="nav-menu" id="nav-menu">
                     <a href="#start" class="nav-link active">Inicio</a>
-                    <a href="#projets" class="nav-link">Proyectos</a>
+                    <a href="#projects" class="nav-link">Proyectos</a>
                     <a href="#about" class="nav-link">Sobre mí</a>
                     <a href="#course" class="nav-link">Cursos</a>
                     <a href="#contact" class="nav-link">Contacto</a>
@@ -33,11 +35,13 @@
             </div>
         </nav>
     </header>
+
     <main>
+
         <section id="start" class="hero">
             <div class="hero-container">
                 <div class="hero-content">
-                    <!--My Intro-Presentation-->
+                    <!--My Text-Presentation-->
                     <div class="hero-text">
                         <p class="hero-subtitle">Tecnico Universitario en Informatica</p>
                         <p class="hero-description">
@@ -47,12 +51,12 @@
                             conocimientos y creciendo profesionalmente."
                         </p>
                         <div class="hero-buttons">
-                            <a href="#projets" class="btn btn-primary">
-                                <i class="fas fa-code"></i>
+                            <a href="#projects" class="btn btn-primary">
+                                <i class="fas fa-code" aria-hidden="true" alt=""></i>
                                 Ver Proyectos
                             </a>
                             <a href="#contact" class="btn btn-secondary">
-                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope" aria-hidden="true" alt=""></i>
                                 Contactar
                             </a>
                         </div>
@@ -60,19 +64,19 @@
                     <!--Presentation's Image-->
                     <div class="hero-image">
                         <div class="image-container">
-                            <img src="static/img/felipe.jpeg" alt="Felipe Bianciotto" class="profile-img">
+                            <img src="static/img/felipe.jpeg" alt="Felipe Bianciotto" class="profile-img" loading="lazy">
                             <div class="floating-icons">
                                 <div class="floating-icon" style="--delay: 0s">
-                                    <i class="fas fa-handshake"></i>
+                                    <i class="fas fa-handshake" aria-hidden="true" alt=""></i>
                                 </div>
                                 <div class="floating-icon" style="--delay: 1s">
-                                    <i class="fab fa-python"></i>
+                                    <i class="fab fa-python" aria-hidden="true" alt=""></i>
                                 </div>
                                 <div class="floating-icon" style="--delay: 2s">
-                                    <i class="fas fa-microscope"></i>
+                                    <i class="fas fa-microscope" aria-hidden="true" alt=""></i>
                                 </div>
                                 <div class="floating-icon" style="--delay: 3s">
-                                    <i class="fab fa-linux"></i>
+                                    <i class="fab fa-linux" aria-hidden="true" alt=""></i>
                                 </div>
                             </div>
                         </div>
@@ -80,7 +84,7 @@
                 </div>
             </div>
         </section>
-        <!--Presentation's Cards-->
+
         <section class="features">
             <div class="container">
                 <div class="features-grid">
@@ -109,256 +113,110 @@
                 </div>
             </div>
         </section>
-        <!--Projets-->
-        <section id="projets">
-            <main class="main-content">
-                <section class="projects-hero">
-                    <div class="container">
-                        <h1 class="page-title">Mis Proyectos</h1>
-                        <p class="page-subtitle">Explora mis trabajos como desarrollor</p>
-                    </div>
-                </section>
-                <!--Modificar por completo-->
-                <section class="projects-content">
-                    <div class="container">
-                        <div class="projects-grid">
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="static/img/apptitudia.png" alt="Gestion de Seleccion de Talentos">
-                                    <div class="project-overlay">
-                                        <div class="project-links">
-                                            <a href="https://github.com/Bianciotto/ApptitudAI.git" class="project-link"
-                                                title="Ver en GitHub" target="_blank">
-                                                <i class="fab fa-github"></i>
-                                            </a>
-                                            <a href="https://disponibilizacionweb.onrender.com/login"
-                                                class="project-link" title="Ver Demo" target="_blank">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h3>Sistema de Gestión de reclutamiento de talentos</h3>
-                                    <p>Credenciales: Usuario = Fernando ; Contraseña = admin123;</p>
-                                    <p>Este módulo de ERP combina tecnologías web modernas y
-                                        machine learning. Utiliza Python y Flask como base para el backend, integrando
-                                        modelos predictivos con scikit-learn para mejorar la selección de candidatos
-                                        mediante análisis de datos históricos y características de perfiles exitosos. La
-                                        interfaz está construida con HTML5, CSS3 y JavaScript, ofreciendo una
-                                        experiencia de usuario ágil e intuitiva. El sistema almacena y gestiona la
-                                        información en una base de datos SQLite, administrada mediante SQLAlchemy, lo
-                                        que permite consultas eficientes y persistencia de datos estructurada.</p>
-                                    <div class="project-technologies">
-                                        <span class="tech-tag">Python</span>
-                                        <span class="tech-tag">Flask</span>
-                                        <span class="tech-tag">Machine learning</span>
-                                        <span class="tech-tag">HTML5</span>
-                                        <span class="tech-tag">CSS3</span>
-                                        <span class="tech-tag">Java Script</span>
-                                        <span class="tech-tag">SQLite</span>
-                                        <span class="tech-tag">SQLAlchemy</span>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="static/img/talentotech.png" alt="Tienda E-Commers">
-                                    <div class="project-overlay">
-                                        <div class="project-links">
-                                            <a href="https://github.com/Bianciotto/front-end-talento-tech.git"
-                                                class="project-link" title="Ver en GitHub" target="_blank">
-                                                <i class="fab fa-github"></i>
-                                            </a>
-                                            <a href="https://bianciotto.github.io/front-end-talento-tech/"
-                                                class="project-link" title="Ver Demo" target="_blank">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h3>Sitio Web E-commerce (Front-End)</h3>
-                                    <p>Como parte de una capacitación en desarrollo Front-End, diseñé y desarrollé una
-                                        página web e-commerce básica aplicando conocimientos de HTML5, CSS3 y
-                                        JavaScript. Utilicé Bootstrap para construir una interfaz moderna, responsiva y
-                                        visualmente atractiva, optimizada para distintos dispositivos.
-                                        El sitio incluye una estructura típica de tienda online: menú de navegación,
-                                        galería de productos, descripciones, botones de acción y diseño adaptable. Este
-                                        proyecto me permitió consolidar buenas prácticas en maquetación web,
-                                        organización del código y experiencia de usuario (UX).</p>
-                                    <div class="project-technologies">
-                                        <span class="tech-tag">HTML5</span>
-                                        <span class="tech-tag">CSS3</span>
-                                        <span class="tech-tag">Java Script</span>
-                                        <span class="tech-tag">Bootstrap</span>
+        <section id="projects">
+            <div class="projects-hero">
+                <div class="container">
+                    <h1 class="page-title">Mis Proyectos</h1>
+                    <p class="page-subtitle">Explora mis trabajos como desarrollador</p>
+                </div>
+            </div>
+            <div class="projects-content">
+                <div class="container">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="static/img/apptitudia.png" alt="Gestion de Seleccion de Talentos">
+                                <img src="static/img/apptitudia.png" alt="Gestion de Seleccion de Talentos" loading="lazy">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/Bianciotto/ApptitudAI.git" class="project-link"
+                                            title="Ver en GitHub" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="https://disponibilizacionweb.onrender.com/login" class="project-link"
+                                            title="Ver Demo" target="_blank" rel="noopener noreferrer">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <!--
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="/placeholder.svg?height=250&width=400" alt="Monitor de Red">
-                                    <div class="project-overlay">
-                                        <div class="project-links">
-                                            <a href="#" class="project-link" title="Ver en GitHub">
-                                                <i class="fab fa-github"></i>
-                                            </a>
-                                            <a href="#" class="project-link" title="Ver Demo">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h3>Monitor de Tráfico de Red</h3>
-                                    <p>Sistema de monitoreo en tiempo real que analiza el tráfico de red y detecta
-                                        patrones sospechosos o anomalías.</p>
-                                    <div class="project-technologies">
-                                        <span class="tech-tag">Python</span>
-                                        <span class="tech-tag">Scapy</span>
-                                        <span class="tech-tag">Matplotlib</span>
-                                        <span class="tech-tag">Tkinter</span>
-                                    </div>
-                                    <div class="project-features">
-                                        <ul>
-                                            <li>Captura de paquetes</li>
-                                            <li>Análisis de protocolos</li>
-                                            <li>Alertas automáticas</li>
-                                            <li>Visualización de datos</li>
-                                        </ul>
-                                    </div>
+                            <div class="project-content">
+                                <h3>Sistema de Gestión de reclutamiento de talentos</h3>
+                                <p>Credenciales: Usuario = Fernando ; Contraseña = admin123;</p>
+                                <p>Este módulo de ERP combina tecnologías web modernas y
+                                    machine learning. Utiliza Python y Flask como base para el backend, integrando
+                                    modelos predictivos con scikit-learn para mejorar la selección de candidatos
+                                    mediante análisis de datos históricos y características de perfiles exitosos. La
+                                    interfaz está construida con HTML5, CSS3 y JavaScript, ofreciendo una
+                                    experiencia de usuario ágil e intuitiva. El sistema almacena y gestiona la
+                                    información en una base de datos SQLite, administrada mediante SQLAlchemy, lo
+                                    que permite consultas eficientes y persistencia de datos estructurada.</p>
+                                <div class="project-technologies">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Flask</span>
+                                    <span class="tech-tag">Machine learning</span>
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">SQLite</span>
+                                    <span class="tech-tag">SQLAlchemy</span>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="/placeholder.svg?height=250&width=400" alt="Generador de Contraseñas">
-                                    <div class="project-overlay">
-                                        <div class="project-links">
-                                            <a href="#" class="project-link" title="Ver en GitHub">
-                                                <i class="fab fa-github"></i>
-                                            </a>
-                                            <a href="#" class="project-link" title="Ver Demo">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h3>Generador de Contraseñas Seguras</h3>
-                                    <p>Aplicación web que genera contraseñas criptográficamente seguras con opciones
-                                        personalizables y verificación de fortaleza.</p>
-                                    <div class="project-technologies">
-                                        <span class="tech-tag">JavaScript</span>
-                                        <span class="tech-tag">HTML5</span>
-                                        <span class="tech-tag">CSS3</span>
-                                        <span class="tech-tag">Web Crypto API</span>
-                                    </div>
-                                    <div class="project-features">
-                                        <ul>
-                                            <li>Generación criptográfica</li>
-                                            <li>Análisis de fortaleza</li>
-                                            <li>Opciones personalizables</li>
-                                            <li>Interfaz responsive</li>
-                                        </ul>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="static/img/talentotech.png" alt="Tienda E-Commerce">
+                                <img src="static/img/talentotech.png" alt="Tienda E-Commerce" loading="lazy">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/Bianciotto/front-end-talento-tech.git"
+                                            class="project-link" title="Ver en GitHub" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="https://bianciotto.github.io/front-end-talento-tech/"
+                                            class="project-link" title="Ver Demo" target="_blank" rel="noopener noreferrer">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="/placeholder.svg?height=250&width=400" alt="Dashboard de Seguridad">
-                                    <div class="project-overlay">
-                                        <div class="project-links">
-                                            <a href="#" class="project-link" title="Ver en GitHub">
-                                                <i class="fab fa-github"></i>
-                                            </a>
-                                            <a href="#" class="project-link" title="Ver Demo">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h3>Dashboard de Seguridad</h3>
-                                    <p>Panel de control centralizado para monitorear eventos de seguridad, logs del
-                                        sistema y métricas de rendimiento.</p>
-                                    <div class="project-technologies">
-                                        <span class="tech-tag">React</span>
-                                        <span class="tech-tag">Node.js</span>
-                                        <span class="tech-tag">Express</span>
-                                        <span class="tech-tag">Chart.js</span>
-                                    </div>
-                                    <div class="project-features">
-                                        <ul>
-                                            <li>Monitoreo en tiempo real</li>
-                                            <li>Visualización de datos</li>
-                                            <li>Sistema de alertas</li>
-                                            <li>Exportación de reportes</li>
-                                        </ul>
-                                    </div>
+                            <div class="project-content">
+                                <h3>Sitio Web E-commerce (Front-End)</h3>
+                                <p>Como parte de una capacitación en desarrollo Front-End, diseñé y desarrollé una
+                                    página web e-commerce básica aplicando conocimientos de HTML5, CSS3 y
+                                    JavaScript. Utilicé Bootstrap para construir una interfaz moderna, responsiva y
+                                    visualmente atractiva, optimizada para distintos dispositivos.
+                                    El sitio incluye una estructura típica de tienda online: menú de navegación,
+                                    galería de productos, descripciones, botones de acción y diseño adaptable. Este
+                                    proyecto me permitió consolidar buenas prácticas en maquetación web,
+                                    organización del código y experiencia de usuario (UX).</p>
+                                <div class="project-technologies">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Bootstrap</span>
                                 </div>
                             </div>
-
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="/placeholder.svg?height=250&width=400" alt="Cifrador de Archivos">
-                                    <div class="project-overlay">
-                                        <div class="project-links">
-                                            <a href="#" class="project-link" title="Ver en GitHub">
-                                                <i class="fab fa-github"></i>
-                                            </a>
-                                            <a href="#" class="project-link" title="Ver Demo">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h3>Cifrador de Archivos</h3>
-                                    <p>Herramienta de línea de comandos para cifrar y descifrar archivos usando
-                                        algoritmos de cifrado simétrico y asimétrico.</p>
-                                    <div class="project-technologies">
-                                        <span class="tech-tag">Python</span>
-                                        <span class="tech-tag">Cryptography</span>
-                                        <span class="tech-tag">Click</span>
-                                        <span class="tech-tag">RSA</span>
-                                    </div>
-                                    <div class="project-features">
-                                        <ul>
-                                            <li>Cifrado AES y RSA</li>
-                                            <li>Interfaz CLI intuitiva</li>
-                                            <li>Gestión de claves</li>
-                                            <li>Verificación de integridad</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        -->
                         </div>
                     </div>
-                </section>
+                </div>
+            </div>
         </section>
-    </main>
 
-    </section>
-
-    <!--My Presentation-->
-    <section id="about">
-        <main class="main-content">
-            <section class="about-hero">
+        <section id="about">
+            <div class="about-hero">
                 <div class="container">
                     <h1 class="page-title">Sobre mí</h1>
                     <p class="page-subtitle">Conoce más sobre mi trayectoria y pasión por la tecnología</p>
                 </div>
-            </section>
-            <section class="about-content">
+            </div>
+            <div class="about-content">
                 <div class="container">
                     <div class="about-grid">
                         <div class="about-image">
-                            <img src="static/img/felipe.jpeg" alt="Felipe Bianciotto" class="about-img">
+                            <img src="static/img/felipe.jpeg" alt="Felipe Bianciotto" class="about-img" loading="lazy">
                         </div>
                         <div class="about-text">
                             <h2>¡Hola! Soy Felipe Bianciotto</h2>
@@ -398,304 +256,37 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <!--My Skill-->
-            <section class="skills">
+            </div>
+            <div class="skills">
                 <div class="container">
                     <h2 class="section-title">Lenguajes, Tecnologías y Herramientas</h2>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>Lenguajes de Programación</h3>
-                            <div class="skill-items">
-                                <div class="skill-item">
-                                    <img src="static/img/Python.svg" alt="Lenguaje Python" width="24" height="24">
-                                    <span>Python</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/Java.svg" alt="Lenguaje Java" width="24" height="24">
-                                    <span>Java</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/Html5.svg" alt="Lenguaje HTML5" width="24" height="24">
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/Css3.svg" alt="Lenguaje CSS3" width="24" height="24">
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/Javascript.svg" alt="Lenguaje JavaScript" width="24"
-                                        height="24">
-                                    <span>JavaScript</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/icon_C.svg" alt="Lenguaje C" width="24" height="24">
-                                    <span>C</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/icon_Csharp.svg" alt="Lenguaje C#" width="24" height="24">
-                                    <span>C#</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/icon_Assembly.svg" alt="Lenguaje Assembly" width="24"
-                                        height="24">
-                                    <span>Assembly</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        
-                        <div class="skill-category">
-                            <h3>Bases de Datos</h3>
-                            <div class="skill-items">
-                                <div class="skill-item">
-                                    <img src="static/img/Sql.svg" alt="Lenguaje SQL" width="24" height="24">
-                                    <span>SQL</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/icon_Mysql.svg" alt="Tegnología MySQL" width="24" height="24">
-                                    <span>MySQL</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/icon_Postgresql.svg" alt="Tegnología PostgreSQL" width="24"
-                                        height="24">
-                                    <span>PostgreSQL</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/Sqlite.svg" alt="Tegnología SQLite" width="24"
-                                        height="24">
-                                    <span>SQLite</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/DockerWordmark.svg" alt="Tegnología Docker" width="24"
-                                        height="24">
-                                    <span>Docker</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/FileTypeExcel.svg" alt="Tegnologia Excel" width="24" height="24">
-                                    <span>Excel</span>
-                                </div>
-                                 <div class="skill-item">
-                                    <img src="static/img/Sqlalchemy.svg" alt="Tegnología SqlAlchemy" width="24"
-                                        height="24">
-                                    <span>Sqlachemy</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="skill-category">
-                            <h3>Otras Tecnología y Herramientas  </h3>
-                            <div class="skill-items">
-                                <div class="skill-item">
-                                    <img src="static/img/icon_Selenium.svg" alt="Tegnología Selenium" width="24"
-                                        height="24">
-                                    <span>Selenium</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/icon_Junit.svg" alt="Tegnología JUnit" width="24" height="24">
-                                    <span>JUnit</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/Pytest.svg" alt="Tegnología Pytest" width="24"
-                                        height="24">
-                                    <span>Pytest</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/Postman.svg" alt="Herramienta Postman" width="24"
-                                        height="24">
-                                    <span>Postman</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/Trello.svg" alt="Herramienta Trello" width="24"
-                                        height="24">
-                                    <span>Trello</span>
-                                </div>
-                                <div class="skill-item">
-                                    <img src="static/img/Jira.svg" alt="Herramienta Jira" width="24"
-                                        height="24">
-                                    <span>Jira</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                    <div class="skills-grid" id="skills-grid"></div>
                 </div>
-            </section>
-        </main>
-    </section>
+            </div>
+        </section>
 
-    <!--My Capacitation-->
-    <section id="course">
-        <main class="main-content">
-            <section class="courses-hero">
+        <section id="course">
+            <div class="courses-hero">
                 <div class="container">
                     <h1 class="page-title">Cursos y Capacitaciones</h1>
                     <p class="page-subtitle">Mi formación académica y profesional en tecnología</p>
                 </div>
-            </section>
-
-            <section class="courses-content">
+            </div>
+            <!--Render of courses-->
+            <div class="courses-content">
                 <div class="container">
-                    <div class="courses-grid">
-                        <div class="course-card">
-                            <div class="course-header">
-                                <div class="course-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <div class="course-year">2025</div>
-                            </div>
-                            <h3>Tecnicatura Universitaria en Informatica</h3>
-                            <p class="course-institution">Universidad Nacional General Sarmiento</p>
-                            <p class="course-description">
-                                La Tecnicatura Universitaria en Informática forma profesionales capaces de desarrollar
-                                software o componentes de sistemas, colaborar en tareas de análisis, especificación,
-                                diseño y testing, y participar activamente en todo el ciclo de vida del software.
-
-                                La formación combina programación, bases de datos, ingeniería de software, sistemas
-                                operativos y redes, junto con el desarrollo del pensamiento lógico y matemático
-                                necesario para abordar problemas técnicos con precisión y criterio.
-                            </p>
-                            <div class="course-technologies">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Java</span>
-                                <span class="tech-tag">SQL</span>
-                                <span class="tech-tag">Agile</span>
-                            </div>
-                        </div>
-
-                        <div class="course-card">
-                            <div class="course-header">
-                                <div class="course-icon">
-                                    <i class="fas fa-language"></i>
-                                </div>
-                                <div class="course-year">2025</div>
-                            </div>
-                            <h3>Inglés Nivel 4 (equivalente a Nivel 2.1 del MCER)</h3>
-                            <p class="course-institution">Universidad Nacional Jose C. Paz</p>
-                            <p class="course-description">
-                                Curso centrado en el desarrollo de habilidades de comprensión lectora, auditiva y
-                                expresión escrita en inglés, correspondiente al nivel A2+ del Marco Común Europeo de
-                                Referencia para las Lenguas (MCER). Se abordaron estructuras gramaticales y vocabulario
-                                de nivel básico-intermedio, con foco en situaciones cotidianas y textos académicos.
-                            </p>
-                            <div class="course-technologies">
-                                <span class="tech-tag">Writing</span>
-                                <span class="tech-tag">Speaking</span>
-                                <span class="tech-tag">Listening</span>
-                                <span class="tech-tag">Technical Reading</span>
-                            </div>
-                        </div>
-
-                        <div class="course-card">
-                            <div class="course-header">
-                                <div class="course-icon">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                                <div class="course-year">2023</div>
-                            </div>
-                            <h3>Desarrollo Web Front-End</h3>
-                            <p class="course-institution">Talento Tech</p>
-                            <p class="course-description">
-                                Capacitación en Desarrollo Front-End
-                                Formación introductoria en desarrollo web, donde apliqué conocimientos básicos de HTML,
-                                CSS y JavaScript. También trabajamos con Bootstrap para construir interfaces modernas y
-                                adaptables, enfocándonos en buenas prácticas y estructura del código.
-                            </p>
-                            <div class="course-technologies">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">Java Script</span>
-                                <span class="tech-tag">Bootstrap</span>
-                            </div>
-                        </div>
-
-                        <div class="course-card">
-                            <div class="course-header">
-                                <div class="course-icon">
-                                    <i class="fas fa-vial"></i>
-                                </div>
-                                <div class="course-year">2022</div>
-                            </div>
-                            <h3>Curso de QA Manual</h3>
-                            <p class="course-institution">Argentina Programa 4.0</p>
-                            <p class="course-description">
-                                Capacitación en conceptos básicos de aseguramiento de calidad, con énfasis en testing
-                                exploratorio y testing manual. Incluyó la elaboración de planes de testing para
-                                garantizar la cobertura y calidad del software. Las pruebas se aplicaron en una página
-                                web diseñada específicamente para detectar fallos, errores y anomalías. Además, se
-                                utilizó Postman para la administración y seguimiento de las tareas de prueba.
-                            </p>
-                            <div class="course-technologies">
-                                <span class="tech-tag">Testing Manual</span>
-                                <span class="tech-tag">Testing Exploratorio</span>
-                                <span class="tech-tag">Plan de Prueba</span>
-                                <span class="tech-tag">PostMan</span>
-                            </div>
-                        </div>
-
-                        <div class="course-card">
-                            <div class="course-header">
-                                <div class="course-icon">
-                                    <i class="fas fa-gamepad"></i>
-                                </div>
-                                <div class="course-year">2022</div>
-                            </div>
-                            <h3>Introducción al Desarrollo de Videojuegos con Godot</h3>
-                            <p class="course-institution">Universidad Nacional Jose C. Paz</p>
-                            <p class="course-description">
-                                Capacitación enfocada en el desarrollo de videojuegos utilizando el motor Godot. Apliqué
-                                lógica de programación orientada a objetos, diagramas de flujo y el lenguaje GDScript.
-                                Como proyecto final, desarrollamos un juego tipo spaceship shooter, el cual fue
-                                publicado en la plataforma Itch.io
-                            </p>
-                            <div class="course-technologies">
-                                <span class="tech-tag">GDScript</span>
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Godot</span>
-                                <span class="tech-tag">UML</span>
-                            </div>
-                        </div>
-
-
-
-                        <div class="course-card">
-                            <div class="course-header">
-                                <div class="course-icon">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/120px-Salesforce.com_logo.svg.png"
-                                        alt="Salesforce Logo" width="30">
-                                </div>
-                                <div class="course-year">Actual</div>
-                            </div>
-                            <h3>Capacitación en Desarrollo Salesforce,TrailHead</h3>
-                            <p class="course-institution">Ruta:"Conozca en detalle las herramientas y conceptos de
-                                desarrollo de Salesforce"</p>
-                            <p class="course-description">
-                                Actualmente estoy realizando una ruta de aprendizaje en Trailhead donde profundizo en
-                                las herramientas y conceptos clave para el desarrollo en Salesforce. En esta formación,
-                                estudio los fundamentos de Apex, la utilización de la interfaz de desarrollo y el manejo
-                                de la API de Salesforce, enfocándome en la construcción y personalización de
-                                aplicaciones en la plataforma.
-                            </p>
-                            <div class="course-technologies">
-                                <span class="tech-tag">Apex</span>
-                                <span class="tech-tag">Trigger</span>
-                                <span class="tech-tag">Developer Console</span>
-                                <span class="tech-tag">SOQL-SOSL</span>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="courses-grid" id="courses-grid"></div>
                 </div>
-            </section>
+            </div>
 
-            <section class="certifications">
+            <div class="certifications">
                 <div class="container">
                     <h2 class="section-title">Certificaciones</h2>
                     <div class="cert-grid">
                         <div class="cert-item">
                             <i class="fas fa-vial"></i>
                             <h4>Testing Manual</h4>
-                            <p>Certificado por Univesidad Nacional Tegnologica</p>
+                            <p>Certificado por Universidad Nacional Tecnológica</p>
                         </div>
                         <div class="cert-item">
                             <i class="fas fa-code"></i>
@@ -709,146 +300,145 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-    </section>
-    <!--Contact Me-->
-    <section id="contact" class="contact">
-        <section class="contact-hero">
-            <div class="container">
-                <h1 class="page-title">Contacto</h1>
-                <p class="page-subtitle">
-                    Estoy siempre abierto a nuevas oportunidades, colaboraciones y conversaciones sobre
-                    tecnología y desarrollo.
-                    No dudes en contactarme si tienes alguna pregunta o propuesta.
-                </p>
             </div>
         </section>
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h2>Conectemos</h2>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="method-info">
-                                <h4>Email</h4>
-                                <p>profesionalbianciotto@hotmail.com</p>
-                            </div>
-                        </div>
 
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="method-info">
-                                <h4>Teléfono</h4>
-                                <p>+54 9 11 3124-9402</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="method-info">
-                                <h4>Ubicación</h4>
-                                <p>Buenos Aires, Argentina</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <h3>Sígueme en</h3>
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/matias-felipe-bianciotto-10a7571a5/"
-                                class="social-link linkedin" title="LinkedIn" target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="https://github.com/Bianciotto" class="social-link github" title="GitHub"
-                                target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="mailto:profesionalbianciotto@hotmail.com" class="social-link Outlook"
-                                title="Outlook" target="_blank">
-                                <i class="fab fa-microsoft"></i>
-                            </a>
-                            <a href="https://wa.me/5491131249402" class="social-link Whatsapp" title="WhatsApp"
-                                target="_blank">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form-container">
-                    <form action="https://formspree.io/f/xvgorjye" method="POST" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Nombre completo</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Asunto</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Selecciona un asunto</option>
-                                <option value="trabajo">Oportunidad laboral</option>
-                                <option value="colaboracion">Colaboración</option>
-                                <option value="consulta">Consulta técnica</option>
-                                <option value="proyecto">Propuesta de proyecto</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" rows="6" required placeholder="Cuéntame sobre tu proyecto o consulta..."></textarea>
-                        </div>
-
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" id="privacy" name="privacy" required>
-                                <span class="checkmark"></span>
-                                Acepto la política de privacidad y el tratamiento de mis datos
-                            </label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
-                            Enviar mensaje
-                        </button>
-                    </form>
+        <section id="contact" class="contact">
+            <div class="contact-hero">
+                <div class="container">
+                    <h1 class="page-title">Contacto</h1>
+                    <p class="page-subtitle">
+                        Estoy siempre abierto a nuevas oportunidades, colaboraciones y conversaciones sobre
+                        tecnología y desarrollo.
+                        No dudes en contactarme si tienes alguna pregunta o propuesta.
+                    </p>
                 </div>
             </div>
-        </div>
-
-        <section class="availability">
             <div class="container">
-                <div class="availability-card">
-                    <div class="availability-icon">
-                        <i class="fas fa-calendar-check"></i>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Conectemos</h2>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Email</h4>
+                                    <p>profesionalbianciotto@hotmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Teléfono</h4>
+                                    <p>+54 9 11 3124-9402</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Ubicación</h4>
+                                    <p>Buenos Aires, Argentina</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3>Sígueme en</h3>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/matias-felipe-bianciotto-10a7571a5/"
+                                    class="social-link linkedin" title="LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Felipe Bianciotto">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/Bianciotto" class="social-link github" title="GitHub"
+                                    target="_blank" rel="noopener noreferrer" aria-label="GitHub de Felipe Bianciotto">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="mailto:profesionalbianciotto@hotmail.com" class="social-link Outlook"
+                                    title="Outlook" target="_blank" rel="noopener noreferrer" aria-label="Correo Outlook de Felipe Bianciotto">
+                                    <i class="fab fa-microsoft"></i>
+                                </a>
+                                <a href="https://wa.me/5491131249402" class="social-link Whatsapp" title="WhatsApp"
+                                    target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Felipe Bianciotto">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="availability-content">
-                        <h3>Disponibilidad</h3>
-                        <p>Actualmente disponible para proyectos freelance y oportunidades de trabajo remoto o
-                            presencial en Buenos Aires.</p>
-                        <div class="availability-status">
-                            <span class="status-indicator available"></span>
-                            <span>Disponible para nuevos proyectos</span>
+
+                    <div class="contact-form-container">
+                        <form action="https://formspree.io/f/xvgorjye" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nombre completo</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Asunto</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="trabajo">Oportunidad laboral</option>
+                                    <option value="colaboracion">Colaboración</option>
+                                    <option value="consulta">Consulta técnica</option>
+                                    <option value="proyecto">Propuesta de proyecto</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" rows="6" required
+                                    placeholder="Cuéntame sobre tu proyecto o consulta..."></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    Acepto la política de privacidad y el tratamiento de mis datos
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" aria-label="Enviar mensaje" role="button">
+                                <i class="fas fa-paper-plane" aria-hidden="true" alt=""></i>
+                                Enviar mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="availability">
+                <div class="container">
+                    <div class="availability-card">
+                        <div class="availability-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="availability-content">
+                            <h3>Disponibilidad</h3>
+                            <p>Actualmente disponible para proyectos freelance y oportunidades de trabajo remoto o
+                                presencial en Buenos Aires.</p>
+                            <div class="availability-status">
+                                <span class="status-indicator available"></span>
+                                <span>Disponible para nuevos proyectos</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        </main>
-    </section>
     </main>
 
     <footer class="footer">

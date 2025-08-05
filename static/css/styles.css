@@ -6,7 +6,6 @@
 }
 
 :root {
-    /* Paleta de colores rosa pastel profesional */
     --primary-color: #7372a7;
     --primary-light: #ac719a;
     --primary-dark: #191331;
@@ -343,26 +342,6 @@ body {
     line-height: 1.6;
 }
 
-.no-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    /* tamaño similar al ícono */
-    height: 36px;
-    border-radius: 6px;
-    /* esquinas redondeadas */
-    background-color: #fffdfd;
-    /* color de fondo oscuro */
-    color: rgb(158, 58, 136);
-    /* texto en blanco */
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-
 /* Main Content */
 .main-content {
     padding-top: 70px;
@@ -474,7 +453,10 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
 }
-
+.skill-img{
+    width: 24px;
+    height:24px;
+}
 .skill-category {
     background: var(--background-card);
     padding: 2rem;
@@ -780,50 +762,6 @@ body {
     left: 0;
     color: var(--primary-color);
     font-weight: bold;
-}
-
-/* GitHub Stats */
-.github-stats {
-    padding: 5rem 0;
-    background: var(--gradient-light);
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-}
-
-.stat-card {
-    background: var(--background-card);
-    padding: 2rem;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: var(--shadow);
-    transition: all 0.3s ease;
-}
-
-.stat-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-}
-
-.stat-card i {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.stat-card h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
-}
-
-.stat-card p {
-    color: var(--text-secondary);
-    font-weight: 500;
 }
 
 /* Contact Page */
@@ -1282,11 +1220,6 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
 }
 
 /* Loading states */
