@@ -421,3 +421,39 @@ document.addEventListener('DOMContentLoaded', () => {
     renderSkills();
     renderCourses && renderCourses(); // Si tienes renderCourses, lo ejecuta también
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const card = document.getElementById('availability-card');
+    const toggle = document.getElementById('availability-toggle');
+    if (card && toggle) {
+        function toggleCard() {
+            card.classList.toggle('collapsed');
+            toggle.blur(); // Quita el foco siempre, expandido o colapsado
+        }
+        toggle.addEventListener('click', toggleCard);
+        toggle.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                toggleCard();
+            }
+        });
+    }
+});
+
+// Scroll to top button
+document.addEventListener('DOMContentLoaded', function () {
+    const scrollBtn = document.getElementById('scrollToTopBtn');
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 300) {
+            scrollBtn.classList.add('visible');
+        } else {
+            scrollBtn.classList.remove('visible');
+        }
+    });
+    scrollBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    scrollBtn.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    });
+});
