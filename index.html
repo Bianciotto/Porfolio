@@ -14,7 +14,7 @@
     <link rel="icon" href="static/img/cv.ico" type="image/x-icon">
 </head>
 
-<body>
+<body tabindex="-1">
     <header>
         <nav class="navbar">
             <div class="nav-container">
@@ -22,7 +22,7 @@
                     <a href="index.html">Felipe Bianciotto</a>
                 </div>
                 <div class="nav-menu" id="nav-menu">
-                    <a href="#start" class="nav-link active">Inicio</a>
+                    <a href="#start" class="nav-link">Inicio</a>
                     <a href="#projects" class="nav-link">Proyectos</a>
                     <a href="#about" class="nav-link">Sobre mí</a>
                     <a href="#course" class="nav-link">Cursos</a>
@@ -308,7 +308,7 @@
             </div>
         </section>
 
-        <section id="contact" class="contact">
+        <section id="contact">
             <div class="contact-hero">
                 <div class="container">
                     <h1 class="page-title">Contacto</h1>
@@ -382,7 +382,7 @@
                     </div>
 
                     <div class="contact-form-container">
-                        <form action="https://formspree.io/f/xvgorjye" method="POST" class="contact-form">
+                                                <form id="contactForm" action="https://formspree.io/f/xvgorjye" method="POST" class="contact-form">
                             <div class="form-group">
                                 <label for="name">Nombre completo</label>
                                 <input type="text" id="name" name="name" required>
@@ -393,16 +393,19 @@
                                 <input type="email" id="email" name="email" required>
                             </div>
 
-                            <div class="form-group">
-                                <label for="subject">Asunto</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Selecciona un asunto</option>
-                                    <option value="trabajo">Oportunidad laboral</option>
-                                    <option value="colaboracion">Colaboración</option>
-                                    <option value="consulta">Consulta técnica</option>
-                                    <option value="proyecto">Propuesta de proyecto</option>
-                                    <option value="otro">Otro</option>
-                                </select>
+                                                        <div class="custom-select-wrapper">
+                              <div class="custom-select" tabindex="0" id="customSelect">
+                                <span class="custom-select-trigger">Selecciona un asunto</span>
+                                <div class="custom-options">
+                                  <span class="custom-option" data-value="">Selecciona un asunto</span>
+                                  <span class="custom-option" data-value="trabajo">Oportunidad laboral</span>
+                                  <span class="custom-option" data-value="colaboracion">Colaboración</span>
+                                  <span class="custom-option" data-value="consulta">Consulta técnica</span>
+                                  <span class="custom-option" data-value="proyecto">Propuesta de proyecto</span>
+                                  <span class="custom-option" data-value="otro">Otro</span>
+                                </div>
+                              </div>
+                              <input type="hidden" name="subject" id="subject" required>
                             </div>
 
                             <div class="form-group">
@@ -424,6 +427,7 @@
                                 Enviar mensaje
                             </button>
                         </form>
+                                                <div class="success-message" style="display:none; color: var(--primary-color); font-weight: bold; margin-top: 1rem;"></div>
                     </div>
                 </div>
             </div>

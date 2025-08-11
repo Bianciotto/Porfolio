@@ -1,4 +1,3 @@
-/* Reset y configuración base */
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +23,16 @@
     --gradient-light: linear-gradient(135deg, #3d3946 0%, #2d273d 100%);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -38,7 +47,6 @@ body {
     padding: 0 20px;
 }
 
-/* Navegación */
 .navbar {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -121,7 +129,6 @@ body {
     border-radius: 2px;
 }
 
-/* Hero Section */
 .hero {
     min-height: 75vh;
     display: flex;
@@ -207,7 +214,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Hero Image */
 .hero-image {
     display: flex;
     justify-content: center;
@@ -288,7 +294,6 @@ body {
     }
 }
 
-/* Features Section */
 .features {
     padding: 5rem 0;
     background: var(--background);
@@ -342,12 +347,6 @@ body {
     line-height: 1.6;
 }
 
-/* Main Content */
-.main-content {
-    padding-top: 70px;
-}
-
-/* Page Headers */
 .page-title {
     font-size: 3rem;
     font-weight: 700;
@@ -374,13 +373,20 @@ body {
     color: var(--text-primary);
 }
 
-/* About Page */
+#about,
+#course,
+#projects,
+#contact {
+    padding: 5rem 0;
+}
+
 .about-hero,
 .courses-hero,
 .projects-hero,
 .contact-hero {
     background: var(--accent-color);
-    margin: 2rem 25% 2rem 25%;
+    margin: 2rem 10% 2rem 10%;
+    padding: 2.5rem 0;
     box-shadow: var(--shadow);
     border: 2px solid var(--primary-dark);
     border-radius: 15px;
@@ -442,7 +448,6 @@ body {
     font-weight: 500;
 }
 
-/* Skills Section */
 .skills {
     padding: 5rem 0;
     background: var(--background-light);
@@ -460,13 +465,16 @@ body {
 }
 
 .skill-category {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
     background: var(--background-card);
     padding: 2rem;
     border-radius: 20px;
     box-shadow: var(--shadow);
     border: 1px solid var(--border-color);
 }
-
 
 .skill-category h3 {
     font-size: 1.5rem;
@@ -488,25 +496,48 @@ body {
     padding: 0.75rem;
     background: var(--background-light);
     border-radius: 10px;
+    border: 1.5px solid transparent;
     transition: all 0.3s ease;
+    box-sizing: border-box;
 }
 
 .skill-item:hover {
-    background: var(--gradient-light);
-    transform: translateX(5px);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 60%, var(--primary-dark) 100%);
+    box-shadow:
+        0 0 4px 2px var(--primary-light),
+        0 0 8px 4px var(--primary-color);
+    color: #fff;
+    border: 1.5px solid var(--primary-color);
+    filter: brightness(1.08) saturate(1.1);
+    z-index: 1;
+    transition:
+        background 0.3s,
+        transform 0.2s,
+        box-shadow 0.3s,
+        color 0.3s,
+        border 0.3s,
+        filter 0.3s;
 }
 
 .skill-item i {
     font-size: 1.5rem;
     color: var(--primary-color);
+    transition: color 0.3s, text-shadow 0.3s;
 }
 
-.skill-item span {
+
+.skill-item:hover span {
+    color: #fff;
+    text-shadow: 0 0 4px var(--primary-light), 0 0 8px var(--primary-dark);
     font-weight: 500;
-    color: var(--text-primary);
+    font-size: 1rem;
+}
+.skill-item:hover i {
+    color: #fff;
+    text-shadow: 0 0 4px var(--primary-light), 0 0 8px var(--primary-dark);
+    font-size: 1.5rem;
 }
 
-/* Courses Page */
 .courses-content {
     padding: 5rem 0;
 }
@@ -587,15 +618,16 @@ body {
 }
 
 .tech-tag {
-    background: var(--gradient-light);
-    color: var(--background);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 60%, var(--primary-dark) 100%);
+    color: #fff;
     padding: 0.3rem 0.8rem;
-    border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 500;
+    border: 1.2px solid var(--primary-color);
+    filter: brightness(1.01) saturate(1.05);
+    text-shadow: 0 0 2px var(--primary-light), 0 0 4px var(--primary-dark);
 }
 
-/* Certifications */
 .certifications {
     padding: 5rem 0;
     background: var(--background-light);
@@ -639,7 +671,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Projects Page */
 .projects-content {
     padding: 5rem 0;
 }
@@ -766,11 +797,6 @@ body {
     font-weight: bold;
 }
 
-/* Contact Page */
-.contact {
-    padding: 5rem 0;
-}
-
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -878,7 +904,6 @@ body {
     background: #258f2e;
 }
 
-/* Contact Form */
 .contact-form-container .contact-info {
     background: var(--background-card);
     padding: 2.5rem;
@@ -927,6 +952,82 @@ body {
 .form-group textarea {
     resize: vertical;
     min-height: 120px;
+}
+
+.custom-select-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.custom-select {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.custom-select:focus,
+.custom-select.open {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.custom-select-trigger {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.custom-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 2px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    z-index: 100;
+    max-height: 220px;
+    overflow-y: auto;
+    display: none;
+}
+
+.custom-select.open .custom-options {
+    display: block;
+}
+
+.custom-option {
+    display: block;
+    padding: 12px 16px;
+    cursor: pointer;
+    white-space: normal;
+    word-break: break-word;
+    transition: background 0.2s;
+    background: #fff;
+    color: var(--text-primary);
+    border-bottom: 1px solid #eee;
+}
+
+.custom-option:last-child {
+    border-bottom: none;
+}
+
+.custom-option:hover,
+.custom-option.selected {
+    background: var(--primary-color);
+    color: #fff;
 }
 
 .checkbox-group {
@@ -985,13 +1086,12 @@ body {
 
 }
 
-
 .availability-card {
     display: flex;
     align-items: center;
     gap: 2rem;
     background: var(--background-card);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 20px;
     box-shadow: var(--shadow);
     max-width: 600px;
@@ -1004,6 +1104,7 @@ body {
     max-width: 80px;
     padding: 1rem;
     opacity: 0.8;
+    gap: 0rem;
 }
 
 .availability-card .availability-content {
@@ -1157,6 +1258,13 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    #about,
+    #course,
+    #projects,
+    #contact {
+        padding: 2rem 0;
+    }
+
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1190,7 +1298,8 @@ body {
     }
 
     .skill-items {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .courses-grid {
@@ -1206,9 +1315,21 @@ body {
         gap: 2rem;
     }
 
+    .availability-floating {
+        max-width: 95vw;
+    }
+
     .availability-card {
         flex-direction: column;
         text-align: center;
+    }
+
+    .availability-card.collapsed {
+        max-width: 60px;
+        min-width: 60px;
+        padding: 0.5rem;
+        justify-content: center;
+        align-items: center;
     }
 
     .hero-buttons {
@@ -1255,20 +1376,63 @@ body {
     .feature-card,
     .course-card,
     .project-card {
-        padding: 1.5rem;
+        padding: 1rem;
     }
+
+    .project-content {
+        padding: 1.5rem 0.5rem;
+    }
+    .skill-category {
+    padding: 0.5rem;
+    
+}
 
     .contact-form-container {
         padding: 1.5rem;
+    }
+
+    .contact-info {
+        max-width: 100vw;
+        box-sizing: border-box;
+        padding: 1rem 0;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    .contact-method {
+        padding: 0.5rem 0;
+    }
+
+    .contact-method p {
+        word-break: break-all;
+        font-size: 0.90rem;
     }
 
     .image-container {
         width: 250px;
         height: 250px;
     }
+
+    .form-group,
+    .form-group select {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-group select {
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .form-group option {
+        white-space: normal;
+        word-break: break-word;
+        max-width: 100vw;
+    }
 }
 
-/* Animaciones adicionales */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -1282,18 +1446,11 @@ body {
     }
 }
 
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Loading states */
 .loading {
     opacity: 0.7;
     pointer-events: none;
 }
 
-/* Success message */
 .success-message {
     background: #10b981;
     color: white;

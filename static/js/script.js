@@ -1,4 +1,3 @@
-// Navegación móvil
 const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.getElementById('nav-menu');
 
@@ -15,9 +14,38 @@ if (navToggle && navMenu) {
     });
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = Array.from(navLinks)
+        .map(link => document.querySelector(link.getAttribute('href')))
+        .filter(Boolean);
 
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            navLinks.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
 
-// Animaciones de entrada
+    window.addEventListener('scroll', function () {
+        let scrollPos = window.scrollY || window.pageYOffset;
+        let offset = 150;
+
+        let currentSection = sections[0];
+        for (let section of sections) {
+            if (section.offsetTop - offset <= scrollPos) {
+                currentSection = section;
+            }
+        }
+
+        navLinks.forEach(link => link.classList.remove('active'));
+        let activeLink = Array.from(navLinks).find(
+            link => link.getAttribute('href') === `#${currentSection.id}`
+        );
+        if (activeLink) activeLink.classList.add('active');
+    });
+});
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -31,7 +59,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observar elementos para animaciones
 document.addEventListener('DOMContentLoaded', () => {
     const elementsToAnimate = document.querySelectorAll(
         '.feature-card, .course-card, .project-card, .skill-category, .cert-item, .stat-card'
@@ -42,42 +69,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Formulario de contacto
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
+document.addEventListener('DOMContentLoaded', function () {
+    const customSelect = document.getElementById('customSelect');
+    const trigger = customSelect.querySelector('.custom-select-trigger');
+    const options = customSelect.querySelectorAll('.custom-option');
+    const hiddenInput = document.getElementById('subject');
 
-        const formData = new FormData(contactForm);
-        const submitButton = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitButton.innerHTML;
+    customSelect.addEventListener('click', function (e) {
+        this.classList.toggle('open');
+    });
 
-        // Estado de carga
-        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-        submitButton.disabled = true;
-        contactForm.classList.add('loading');
+    options.forEach(option => {
+        option.addEventListener('click', function (e) {
+            e.stopPropagation();
+            options.forEach(opt => opt.classList.remove('selected'));
+            this.classList.add('selected');
+            trigger.textContent = this.textContent;
+            hiddenInput.value = this.getAttribute('data-value');
+            customSelect.classList.remove('open');
+        });
+    });
 
-        try {
-            // Simular envío (aquí integrarías con tu backend)
-            await new Promise(resolve => setTimeout(resolve, 2000));
 
-            // Mostrar mensaje de éxito
-            showSuccessMessage('¡Mensaje enviado correctamente! Te responderé pronto.');
-            contactForm.reset();
-
-        } catch (error) {
-            console.error('Error al enviar el formulario:', error);
-            showErrorMessage('Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.');
-        } finally {
-            // Restaurar estado del botón
-            submitButton.innerHTML = originalText;
-            submitButton.disabled = false;
-            contactForm.classList.remove('loading');
+    document.addEventListener('click', function (e) {
+        if (!customSelect.contains(e.target)) {
+            customSelect.classList.remove('open');
         }
     });
-}
 
-// Funciones para mostrar mensajes
+    customSelect.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            customSelect.classList.remove('open');
+        }
+    });
+});
+
 function showSuccessMessage(message) {
     const existingMessage = document.querySelector('.success-message');
     if (existingMessage) {
@@ -122,7 +148,6 @@ function showErrorMessage(message) {
     }, 5000);
 }
 
-// Contador animado para estadísticas
 function animateCounters() {
     const counters = document.querySelectorAll('.stat-number');
 
@@ -144,7 +169,7 @@ function animateCounters() {
     });
 }
 
-// Activar contadores cuando sean visibles
+
 const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -161,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Validación de formulario en tiempo real
+
 const formInputs = document.querySelectorAll('input, textarea, select');
 formInputs.forEach(input => {
     input.addEventListener('blur', validateField);
@@ -172,10 +197,10 @@ function validateField(e) {
     const field = e.target;
     const value = field.value.trim();
 
-    // Remover errores previos
+  
     clearFieldError(e);
 
-    // Validaciones específicas
+
     if (field.hasAttribute('required') && !value) {
         showFieldError(field, 'Este campo es obligatorio');
         return false;
@@ -217,12 +242,12 @@ function isValidEmail(email) {
     return emailRegex.test(email);
 }
 
-// Preloader simple
+
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });
 
-// Lazy loading para imágenes
+
 if ('IntersectionObserver' in window) {
     const imageObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -240,7 +265,7 @@ if ('IntersectionObserver' in window) {
     });
 }
 
-// Efecto de escritura para el título principal
+
 function typeWriter(element, text, speed = 100) {
     let i = 0;
     element.innerHTML = '';
@@ -256,7 +281,7 @@ function typeWriter(element, text, speed = 100) {
     type();
 }
 
-// Aplicar efecto de escritura al cargar la página de inicio
+
 document.addEventListener('DOMContentLoaded', () => {
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle && window.location.pathname.endsWith('index.html') || window.location.pathname === '/') {
@@ -266,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Array de cursos (cada objeto representa una tarjeta de curso)
+
 const courses = [
     {
         icon: '<i class="fas fa-graduation-cap"></i>',
@@ -340,10 +365,10 @@ aplicaciones en la plataforma.`,
     }
 ];
 
-// Función para renderizar las tarjetas de cursos en el HTML
+
 function renderCourses() {
     const grid = document.getElementById('courses-grid');
-    if (!grid) return; // Evita errores si el contenedor no existe
+    if (!grid) return; 
     grid.innerHTML = courses.map(course => `
     <div class="course-card">
       <div class="course-header">
@@ -419,7 +444,7 @@ function renderSkills() {
 
 document.addEventListener('DOMContentLoaded', () => {
     renderSkills();
-    renderCourses && renderCourses(); // Si tienes renderCourses, lo ejecuta también
+    renderCourses && renderCourses();
 });
 document.addEventListener('DOMContentLoaded', function () {
     const card = document.getElementById('availability-card');
@@ -427,7 +452,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (card && toggle) {
         function toggleCard() {
             card.classList.toggle('collapsed');
-            toggle.blur(); // Quita el foco siempre, expandido o colapsado
+            toggle.blur();
         }
         toggle.addEventListener('click', toggleCard);
         toggle.addEventListener('keypress', (e) => {
@@ -438,7 +463,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-// Scroll to top button
 document.addEventListener('DOMContentLoaded', function () {
     const scrollBtn = document.getElementById('scrollToTopBtn');
     window.addEventListener('scroll', function () {
@@ -456,4 +480,26 @@ document.addEventListener('DOMContentLoaded', function () {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm');
+    const msg = document.querySelector('.success-message');
+    if (form) {
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
+                        if (response.ok) {
+                form.reset();
+                showSuccessMessage('¡Mensaje enviado correctamente!');
+            } else {
+                showErrorMessage('Ocurrió un error al enviar el mensaje.');
+            }
+        });
+    }
 });
